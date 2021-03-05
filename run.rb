@@ -5,15 +5,18 @@ require 'net/http'
 require 'json'
 require_relative "./models/book_search.rb"
 require_relative "./models/book.rb"
+require_relative "./models/cli.rb"
 
-puts "What do you want to search for?"
-input = gets.strip
-search = BookSearch.new(input)
-books = search.books.map{|book_hash| Book.new(book_hash)}
-books.each do |book|
-  puts "*" * 15
-  book.print_summary
-end
+CLI.new
+
+# puts "What do you want to search for?"
+# input = gets.strip
+# search = BookSearch.new(input)
+# books = search.books.map{|book_hash| Book.new(book_hash)}
+# books.each do |book|
+#   puts "*" * 15
+#   book.print_summary
+# end
 
 # search.books.each do |book|
 #   # binding.pry
@@ -25,4 +28,4 @@ end
 #   puts "*"*15
 # end
 
-binding.pry
+# binding.pry
