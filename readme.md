@@ -7,8 +7,12 @@
 * Server responses
 * Developer console
 * APIs
+APPLICATION PROGRAMMING INTERFACEs
 - Application Programming Interface
-* JSON
+* JSON: JavaScript Object Notation
+Install the Google Chrome extension "JSON Viewer" if you haven't.
+- URI: Universal Resource Identifier
+- URL: Universal Resource Locator
 
 ### Deliverables
 
